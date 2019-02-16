@@ -11,10 +11,8 @@ import org.springframework.web.bind.annotation.RestController
 
 @RestController
 @RequestMapping("order")
-class OrderController(
-        private val orderService: CookService,
-        private val orderConverter: OrderConverter
-) {
+class OrderController(private val orderService: CookService,
+                      private val orderConverter: OrderConverter) {
     @PostMapping("create")
     fun create(@RequestBody orderRequest: OrderRequest) =
             orderService.createOrder(
