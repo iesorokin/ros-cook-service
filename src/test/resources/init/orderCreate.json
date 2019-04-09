@@ -1,0 +1,9 @@
+{
+  "orderId": "123321",
+  "orderItems": [
+    {
+      "name": "salat",
+      "category": "MEET"
+    }
+  ]
+}
