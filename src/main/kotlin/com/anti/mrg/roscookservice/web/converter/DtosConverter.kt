@@ -21,6 +21,7 @@ class DtosConverter {
 
     private fun OrderItemRequest.toOrderItem(): OrderItem =
             OrderItem(
+                    itemId = itemId,
                     name = name,
                     category = Category.valueOf(category)
             )

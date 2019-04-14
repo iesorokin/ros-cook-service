@@ -6,6 +6,7 @@ data class OrderRequest(
 )
 
 data class OrderItemRequest(
+        val itemId: String,
         val name: String,
         val category: String
 )
